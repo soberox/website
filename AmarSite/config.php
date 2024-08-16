@@ -1,8 +1,8 @@
 <?php
 
 session_start();
-    define('servername', 'localhost');
+    define('servername', '192.168.254.81');
     define('username', 'root');
-    define('password', 'kU&p7W^Yt>5KHJGn-Q#Zm@');
+    define('password', 'root');
     define('database', 'form');
     

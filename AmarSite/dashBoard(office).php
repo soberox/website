@@ -59,10 +59,11 @@
                         </thead>
                         <tbody>
                             <?php
-                                $servername = "localhost";
+                               $servername = "192.168.254.81";
                                 $username = "root";
-                                $password = "kU&p7W^Yt>5KHJGn-Q#Zm@";
+                                $password = "root";
                                 $database = "form";
+
 
                                 //creates the connection
                                 $connection = new mysqli($servername, $username, $password, $database);
@@ -119,10 +120,11 @@
                         </thead>
                         <tbody>
                             <?php
-                                $servername = "localhost";
+                               $servername = "192.168.254.81";
                                 $username = "root";
-                                $password = "kU&p7W^Yt>5KHJGn-Q#Zm@";
+                                $password = "root";
                                 $database = "form";
+
 
                                 //creates the connection
                                 $connection = new mysqli($servername, $username, $password, $database);
@@ -199,10 +201,11 @@
                         </thead>
                         <tbody>
                             <?php
-                                $servername = "localhost";
+                               $servername = "192.168.254.81";
                                 $username = "root";
-                                $password = "kU&p7W^Yt>5KHJGn-Q#Zm@";
+                                $password = "root";
                                 $database = "form";
+
 
                                 //creates the connection
                                 $connection = new mysqli($servername, $username, $password, $database);

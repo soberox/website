@@ -31,9 +31,9 @@
         var data = google.visualization.arrayToDataTable([
           ['Month', 'Balance'],
           <?php
-            $servername = "localhost";
+            $servername = "192.168.254.81";
             $username = "root";
-            $password = "kU&p7W^Yt>5KHJGn-Q#Zm@";
+            $password = "root";
             $database = "form";
 
             //creates the connection
@@ -65,9 +65,9 @@
         var data2 = google.visualization.arrayToDataTable([
             ['State', 'Loads'],
           <?php
-            $servername = "localhost";
+            $servername = "192.168.254.81";
             $username = "root";
-            $password = "kU&p7W^Yt>5KHJGn-Q#Zm@";
+            $password = "root";
             $database = "form";
 
             //creates the connection
@@ -98,9 +98,9 @@
         var data3 = google.visualization.arrayToDataTable([
             ['Element', 'Density', { role: 'style' }],
             <?php
-                $servername = "localhost";
+                $servername = "192.168.254.81";
                 $username = "root";
-                $password = "kU&p7W^Yt>5KHJGn-Q#Zm@";
+                $password = "root";
                 $database = "form";
 
                 //creates the connection
@@ -205,9 +205,9 @@
                         </thead>
                         <tbody>
                             <?php
-                                $servername = "localhost";
+                                $servername = "192.168.254.81";
                                 $username = "root";
-                                $password = "kU&p7W^Yt>5KHJGn-Q#Zm@";
+                                $password = "root";
                                 $database = "form";
 
                                 //creates the connection
@@ -277,9 +277,9 @@
                         </thead>
                         <tbody>
                             <?php
-                                $servername = "localhost";
+                                $servername = "192.168.254.81";
                                 $username = "root";
-                                $password = "kU&p7W^Yt>5KHJGn-Q#Zm@";
+                                $password = "root";
                                 $database = "form";
 
                                 //creates the connection
@@ -357,9 +357,9 @@
                         </thead>
                         <tbody>
                             <?php
-                                $servername = "localhost";
+                                $servername = "192.168.254.81";
                                 $username = "root";
-                                $password = "kU&p7W^Yt>5KHJGn-Q#Zm@";
+                                $password = "root";
                                 $database = "form";
 
                                 //creates the connection
