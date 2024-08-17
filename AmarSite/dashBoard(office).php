@@ -61,7 +61,7 @@
                             <?php
                                $servername = "192.168.254.81";
                                 $username = "root";
-                                $password = "root";
+                                $password = "kU&p7W^Yt>5KHJGn-Q#Zm@";
                                 $database = "form";
 
 
@@ -122,7 +122,7 @@
                             <?php
                                $servername = "192.168.254.81";
                                 $username = "root";
-                                $password = "root";
+                                $password = "kU&p7W^Yt>5KHJGn-Q#Zm@";
                                 $database = "form";
 
 
@@ -203,7 +203,7 @@
                             <?php
                                $servername = "192.168.254.81";
                                 $username = "root";
-                                $password = "root";
+                                $password = "kU&p7W^Yt>5KHJGn-Q#Zm@";
                                 $database = "form";
 
 

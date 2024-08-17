@@ -14,17 +14,17 @@
     <title>Document</title>
 </head>
 <body id= "registration_screen">
-    <div class="popup_register" id="form_popup">
+    <div class="popup_register">
         <div class="heading">
             <span>Delete account</span>
         </div>
         <p><i>are you sure you want to delete your account</i></p>
-        <div class="logout_container">
+        <div class="delete_container">
             <div class="goback">
-            <a href="#" onclick="window.history.go(-1); return false;">No</a>
+                <a class="goback" href="#" onclick="window.history.go(-1); return false;">No</a>
             </div>
             <div class="delete">
-                <a href="?confirm-account-deletion">Yes</a>
+                <a class="delete" href="?confirm-account-deletion">Yes</a>
             </div>
         </div>
         <?php
