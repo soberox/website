@@ -94,7 +94,7 @@
                             <th class='row1'>note: </th>
                             <td class='row2'>" . $row["F"] . "</td>
                         </tr>
-                    </table>sss
+                    </table>
                 </div>
             </form>";
         }

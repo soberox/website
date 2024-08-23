@@ -167,7 +167,7 @@
 </head>
 <body id="company">
     <div class="banner">
-        <img src=".images/van_logo.png"></img>
+        <img src="./images/van_logo.png"></img>
         <h1>Armarcargo</h1>
         <div class="login_details">
             <button id="operations">User: <?php echo $_SESSION["user"] ?></button>
@@ -291,7 +291,7 @@
                                 }
 
                                 // read all row from database table
-                                $sql = "SELECT * FROM note BY Date DESC";
+                                $sql = "SELECT * FROM note ORDER By Date DESC";
                                 $result = $connection->query($sql);
 
                                 if(!$result){
