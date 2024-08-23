@@ -1,0 +1,514 @@
+
+body{
+    display: flex;
+    flex-flow: column;
+    width:100%;
+    margin:0;
+}
+
+.banner{
+    z-index: 10000000;
+    font-size: larger;
+    height: 20vh;
+    background-color: #006666;
+    padding: 10px;
+    position:relative;
+    width: 100%;
+    display: flex;
+    gap: 3vw;
+}
+.banner > img{
+    padding-top: 2vh;
+    margin-left: 10%;
+    height: 16.5vh;
+    width: 16vw
+}
+.banner > h1{
+    margin-left: 10%;
+    line-height: 1vh;
+    font-size: 5vw;
+    color: #ed7014;
+    font-weight: 100;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;  
+    width: max-content;
+    padding-left: 3%;
+    -webkit-flex-direction: column; 
+    flex-direction: column;
+}
+.dropDown_menu, #operations{
+    text-align: center;
+    background-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5vw;
+}
+#operations{
+    width: fit-content;
+}
+.dropDown_menu {
+    display: none;
+}
+.menu_links{
+    padding: 10px;
+}
+.menu_links a{
+    text-decoration: none;
+    color: black;
+}
+
+.tittle, #tittle, span{
+    width: max-content;
+    margin: 3%;
+    margin-left: 7%;
+    outline: 1px black dashed;
+    font-size: 3vw;
+    padding: 5px;
+}
+
+.container{
+    border: 1px solid black;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 3%;
+    margin-bottom: 7%;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.driver{
+    width: calc(100% /3);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 5%;
+}
+
+.driver_img{
+    border-radius: 50%;
+    width: 35vh;
+    height: 35vh;
+    background: #006666;
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+.complex button, input, .dropDown{
+    width: 90%;
+    text-align: center;
+    background-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#form_popup button{
+    width: 90%;
+    text-align: center;
+    background-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.dropDown {
+    border-collapse: collapse;
+    display: none;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.row1{
+    width: 25%;
+}
+.row2{
+    width: 75%;
+}
+
+input:hover, button:hover, #form_popup button:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+input:focus + .dropDown{
+    display: block;
+}
+
+button:focus + .dropDown_menu{
+    display: block;  
+}
+.dropDown_menu:hover, .dropDown:hover{
+    display: block;
+}
+.menu_links:hover, .menu_links a:hover{
+    background-color: #006666;
+    color: white;
+}
+
+.loadBoards, .locations, .communications{
+    width: 100%;
+    margin-left: 7%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+#tittle{
+    font-size: 2vw;
+}
+
+.main{
+    margin-left: 7%;
+    margin-top: 4%;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+
+.main > div{
+    padding: .5%;
+    background-color: 006666;
+}
+
+.main > button, img{
+    border: none;
+    height: 12vw;
+    width: 12vw;
+}
+
+.tasks, .notes, .orders{
+    margin: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table{
+    border: 1px solid black;
+    display: block;
+    text-wrap: stable;
+}
+
+.add_button{
+    width: fit-content;
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: .5vh;
+}
+
+.popup_task{
+    top: -150%;
+    opacity: 0;
+    left: 50%;
+    position: fixed;
+    width: 50%;
+    height: auto;
+    background-color: white;
+    padding: 5% 2%;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: block;
+    font-size: 1vw;
+    transform: translate(-50%, -50%);
+}
+.popup_task.active{
+    top: 50%;
+    opacity: 1;
+}
+.popup_note{
+    top: -150%;
+    opacity: 0;
+    left: 50%;
+    position: fixed;
+    width: 50%;
+    height: auto;
+    background-color: white;
+    padding: 5% 2%;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: block;
+    font-size: 1vw;
+    transform: translate(-50%, -50%);
+}
+.popup_note.active{
+    top: 50%;
+    opacity: 1;
+}
+.close_btn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    text-align: center;
+    font-size: 25px;
+    line-height: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.close_btn:hover{
+    background-color: red;
+    color: white;
+}
+.name_text{
+    margin-bottom: 5%;
+    text-decoration: solid;
+}
+.name_text input{
+    background-color: white;
+    text-align: left;
+    margin-top: 5%;
+    padding: 5px;
+    cursor: text;
+}
+.note_text input{
+    background-color: white;
+    text-align: left;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    cursor: text;
+    padding: 5px;
+}
+.name_text input{
+    background-color: white;
+    text-align: left;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    cursor: text;
+    padding: 5px;
+}
+.tasks_text input{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+    text-align: left;
+    cursor: text;
+    padding: 5px;
+}
+#form_popup{
+    z-index: 1000000000;
+}
+#form_popup #submit{
+    width:fit-content;
+    padding: 2% 1%;
+}
+#form_popup span,.heading{
+    margin-bottom: 5%;
+    font-size: 2vw;
+    border: none;
+}
+span{
+    font-size: 1.5vw;
+    margin-left: 0;
+}
+
+.subheading{
+    margin-bottom: 2vh;
+}
+
+.report_container{
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 3%;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: teal;
+}
+
+#report_heading{
+    width:max-content;
+    text-decoration: underline;
+    color: white;
+    font-size: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.report{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#curve_chart, #regions_div, #columnchart_values{
+    margin: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#home_screen{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#registration_screen{
+    background-color: #006666;
+}
+#home_screen .banner{
+    width: 98.99%
+}
+.background{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    z-index: 2;
+}
+.background video{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+.popup_login, .popup_register, .popup_reset{
+    top: -150%;
+    opacity: 0;
+    left: 50%;
+    position: fixed;
+    width: 50%;
+    height: auto;
+    background-color: white;
+    padding: 5% 2%;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: block;
+    font-size: 1vw;
+    transform: translate(-50%, -50%);
+}
+#registration_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+#registration_container div{
+    width: 45%;
+}
+.popup_register #submit, .popup_reset #submit{
+    margin-top: 10%;
+}
+.popup_register, .popup_reset{
+    top: 50%;
+    opacity: 1;
+}
+.popup_login.active{
+    top: 50%;
+    opacity: 1;
+    z-index: 10000000000;
+}
+#form_popup p{
+    font-size: 1.5vw;
+    color: gray;
+}
+#form_popup a{
+    color: #ed7014;
+    text-decoration: underline;
+}
+#form_popup a:hover{
+    cursor: pointer;
+    color: #006666;
+}
+
+.login_button{
+    width: fit-content;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    z-index: 100;
+}
+#start_login{
+    color: white;
+    font-size: 1.5vw;
+    position: relative;
+    height: 5vh;
+    width: 7vw;
+    font-weight: 100;
+    background-color: #ed7014;
+}
+#start_login:hover{
+    height: 7vh;
+    width: 9vw;
+    font-size: 2vw;
+    background-color: white;
+    color: black;
+}
+.login_button:hover{
+    left: 46%;
+}
+.login_details{
+    padding-top: 3%;
+    padding-left: 20%;
+    width: 7vw;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;  
+    width: max-content;
+    -webkit-flex-direction: column; 
+    flex-direction: column;
+}
+.login_details #operations{
+    background-color: #ed7014;
+    text-wrap: wrap;
+    color: white;
+}
+.login_details .menu_links a{
+    color: white;
+}
+.login_details .menu_links:hover, .login_details .menu_links a:hover{
+    background-color: #ed7014;
+    color: black;
+}
+.popup_logout{
+    top: -150%;
+    opacity: 0;
+    left: 50%;
+    position: fixed;
+    width: 50%;
+    height: auto;
+    background-color: white;
+    padding: 5% 2%;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: block;
+    font-size: 2vw;
+    transform: translate(-50%, -50%);
+}
+.popup_delete.active{
+    top: 50%;
+    opacity: 1;
+}
+.delete_container{
+    display: flex;
+    -webkit-flex-direction: row; 
+    flex-direction: row;
+    align-content: space-between;
+}
+.delete_container div{
+    margin-top: 10%;
+    margin-left: 25%;
+    text-align: center;
+}
+.delete_container a{
+    padding: 5px;
+    border: 1px solid black;
+    color: buttontext;
+    background-color: buttonface;
+    text-decoration: none;
+    font-size: 2vw;
+    background-color: gray;
+}
+.delete_container a:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}
