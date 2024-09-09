@@ -13,9 +13,9 @@
 - The driver list is accessible to all users, and mainly display information about the drivers. Each driver droptdown-box displays their name, vehicle measurements, phone, location and notes; above each box is a profile circle that is supposed to house a picture of their van. This tab aims to easily identify a relevant driver by their vehicle, and location, which is important for brokers and office workers trying to book a load.
 ### Software
 - The software page centralizes and catagorizes needed tools, and websites for business orperations. Only the administrator and office workers have access to this page.
-## function
+## Function
   All pages are php files, with the demo versions being html only. The pop-ups required thier respective js file, that would change flip their apperence on and off. The tables, users, and drivers pulls from a database that mainly interacts with the login php file. Each data in the full version is generated and manipulated by several php files.
-## sources
+## Sources
   here are some sources and tutorials where I might have pulled some influence from. If I did not credit a source, then I would humbly ask to comment downbelow so I could quickly add them. Thank you to these awesome creators who would made this project possible
   - https://www.youtube.com/watch?v=cbwLMSNkul0
   - https://www.youtube.com/watch?v=ai7T1p3Xj8A
