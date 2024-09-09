@@ -17,15 +17,15 @@
   All pages are php files, with the demo versions being html only. The pop-ups required thier respective js file, that would change flip their apperence on and off. The tables, users, and drivers pulls from a database that mainly interacts with the login php file. Each data in the full version is generated and manipulated by several php files.
 ## sources
   here are some sources and tutorials where I might have pulled some influence from. If I did not credit a source, then I would humbly ask to comment downbelow so I could quickly add them. Thank you to these awesome creators who would made this project possible
-  -https://www.youtube.com/watch?v=cbwLMSNkul0
-  -https://www.youtube.com/watch?v=ai7T1p3Xj8A
-  -https://www.youtube.com/watch?v=NbGdabN5B5M&t=3s
-  -https://www.youtube.com/watch?v=pdsfCLtNqus
-  -https://www.youtube.com/watch?v=NqP0-UkIQS4
-  -https://stackoverflow.com/questions/37153877/grant-all-privileges-to-all-users-on-a-host-in-mysql
-  -https://stackoverflow.com/questions/9766014/connect-to-mysql-on-amazon-ec2-from-a-remote-server
-  -https://stackoverflow.com/questions/13968494/how-to-delete-a-column-from-a-table-in-mysql
-  -https://stackoverflow.com/questions/20738329/how-to-call-a-php-function-on-the-click-of-a-button
-  -https://stackoverflow.com/questions/16056591/font-scaling-based-on-size-of-container
-  -https://stackoverflow.com/questions/31178653/how-to-keep-active-css-style-after-click-a-button
+  - https://www.youtube.com/watch?v=cbwLMSNkul0
+  - https://www.youtube.com/watch?v=ai7T1p3Xj8A
+  - https://www.youtube.com/watch?v=NbGdabN5B5M&t=3s
+  - https://www.youtube.com/watch?v=pdsfCLtNqus
+  - https://www.youtube.com/watch?v=NqP0-UkIQS4
+  - https://stackoverflow.com/questions/37153877/grant-all-privileges-to-all-users-on-a-host-in-mysql
+  - https://stackoverflow.com/questions/9766014/connect-to-mysql-on-amazon-ec2-from-a-remote-server
+  - https://stackoverflow.com/questions/13968494/how-to-delete-a-column-from-a-table-in-mysql
+  - https://stackoverflow.com/questions/20738329/how-to-call-a-php-function-on-the-click-of-a-button
+  - https://stackoverflow.com/questions/16056591/font-scaling-based-on-size-of-container
+  - https://stackoverflow.com/questions/31178653/how-to-keep-active-css-style-after-click-a-button
 
