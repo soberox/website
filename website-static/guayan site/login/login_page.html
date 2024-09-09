@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <title>Document</title>
+</head>
+<body id="home_screen">
+    <div class="banner">
+        <img src="../images/van_logo.png"></img>
+        <h1>Armarcargo</h1>
+    </div>
+    <div class="background">
+        <video src="../images/van_backgroundvid.mp4" muted loop autoplay></video>
+    </div>
+    <div class="login_button">
+        <button class="add_button" id="start_login">LOGIN</button>
+    </div>
+    <div class="popup_login" id="form_popup">
+        <div class="close_btn" id="close_log">&times;</div>
+        <div class="heading">
+            <span>Login in</span>
+        </div>
+        <p><i>Sorry this feature is unavailable for the static version</i></p>
+        <button onclick="window.location.href='../dashBoard.html';">login</button>
+        <p><i>Don't have an account?</i> <a href="register.html">Create here</a></p>
+        <p><a href="resetPassword.html">Forgot password?</a></p>
+    </div>
+    <script src = "../js/login.js"></script>
+</body>
+</html>
